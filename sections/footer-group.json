@@ -1,0 +1,54 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "ec8df5b2-96be-4333-b145-66b1492b9808": {
+          "type": "link_list",
+          "settings": {
+            "heading": "HELP",
+            "menu": "b-ftr1"
+          }
+        },
+        "0fb25736-7547-4ed2-bcbb-b91bf8aaea06": {
+          "type": "link_list",
+          "settings": {
+            "heading": "SHOP",
+            "menu": "b-ftr2"
+          }
+        },
+        "b75e5dc5-3858-47f0-94f8-5c9ccbc0951f": {
+          "type": "link_list",
+          "settings": {
+            "heading": "COMPANY",
+            "menu": "b-ftr3"
+          }
+        }
+      },
+      "block_order": [
+        "ec8df5b2-96be-4333-b145-66b1492b9808",
+        "0fb25736-7547-4ed2-bcbb-b91bf8aaea06",
+        "b75e5dc5-3858-47f0-94f8-5c9ccbc0951f"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 36,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

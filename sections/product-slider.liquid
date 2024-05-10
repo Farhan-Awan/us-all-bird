@@ -1,0 +1,171 @@
+<style>
+
+.fx_section_contain
+  {
+   	min-height: 550px;
+    padding:2% 1%; 
+    background: #fff;
+  }
+ 
+  .fx_slideshow-abacus { text-align: center; }
+  
+  .fx_proslide
+  {
+    margin: 0 auto;
+    min-height: 380px;
+  }
+  .fx_slidelnk1 img
+  {
+    margin: 0 auto;
+  }
+  
+  .img_product_abacus img
+  {
+        width: 100%;
+        background: transparent;
+    transition: 0.3s;
+  }
+  .img_product_abacus img:hover{transform: scale(1.1);}
+  .fx_slideshow-abacus {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px 0px;
+    margin: 30px 15px;
+}  
+  h3.product_tit_slide {
+    font-size: 22px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+  .img_product_abacus {background: #d3d3d38a;}
+  .fx_section_contain h2{margin-left:20px;}
+   @media only screen and (max-width: 768px) {
+     
+  .fx_section_contain
+  {
+   	min-height: 320px;
+	
+    margin-bottom: 2%;
+    margin-top: 2%
+  }
+     
+  .img_product_abacus
+     {
+      	    margin-left: -30px!important; 		
+     }
+  .img_product_abacus img
+     {
+      	width: 180px; 
+       padding:0;
+     }
+	h3.product_tit_slide {
+      font-size: 16px;
+      padding-bottom: 20px;
+    } 
+   #fx_proslide
+     {
+       margin-bottom: 10%;
+     }
+     .fx_slideshow-abacus h4 { font-size: 11px;}
+      .fx_section_contain{padding:0;}
+     .fx_slidelnk1 img{margin-right: 8px;}
+}
+  
+</style>
+<!-- slider_meet_pro -->
+<div class="fx_section_contain page-width">
+  <h2> {{section.settings.productslide_sec_heading}} </h2>
+   
+  <div id="fx_proslide1 page-width">
+ <div class="fx_wrappslide1">
+ <div class="fx_aba_prodshadow">
+ <ul class="product_slider_shadow" id="fx_slideid">
+ {% for product in collections[section.settings.duc_slide1].products %}
+ <li class="fx_slideshow-abacus">
+   <a class="fx_slidelnk1" href="{{ product.url }}" ><div class="img_product_abacus"><img src="{{ product.featured_image | img_url: 'large' }}" alt="no image"></div></a> 
+   <div class="inside-infor"><h3 class="product_tit_slide">{{- product.title -}}</h3></div>
+<!--     <span class="product_tit_slide">{{- product.price -}}</span> -->
+ </li>
+ {% endfor %} 
+ </ul>
+ </div><!-- #slideshow-container -->
+ 
+</div><!-- #slideshow -->
+
+ 
+  
+</div>
+  
+  
+    <script> 
+$(document).ready(function(){
+ $('#fx_slideid').slick({
+  centerMode: true,
+  centerPadding: '60px',
+   arrows: false,
+  slidesToShow: 3,
+responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+         centerMode: false,
+        centerPadding: '0'
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+});
+		</script>
+</div>
+
+
+{% schema %}
+  {
+    "name": "product-slider",
+    "settings": [
+		{
+			"type": "text",
+			"id": "productslide_sec_heading",
+			"label": "Write section text"
+			},
+		{
+		"type": "collection",
+		"id": "duc_slide1",
+		
+		"label": "Choose collection to show on slider tab 1"
+		}
+],
+
+	 "presets": [
+    {
+      "name": "product-slider",
+      "blocks": [
+        
+      ]
+    }
+  ]
+
+
+  }
+
+{% endschema %}

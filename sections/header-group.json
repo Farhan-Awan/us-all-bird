@@ -1,0 +1,148 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Gifts For Mom, Just In Time. Order By 5\/5 For Guaranteed Delivery By 5\/14.   Shop Gifts",
+            "text_alignment": "center",
+            "color_scheme": "accent-2",
+            "link": "shopify:\/\/pages\/charities"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "settings": {
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "08277acc-3609-4248-bcf9-a3c1c9c335f8": {
+          "type": "mymenu",
+          "settings": {
+            "btn1": "bird1",
+            "link1": "#",
+            "btn2": "bird2",
+            "link2": "#",
+            "btn3": "abcd",
+            "link3": "#",
+            "menu2": ""
+          }
+        },
+        "9eaaebad-b9d8-4761-86de-dc07065a08ed": {
+          "type": "mega-menu",
+          "settings": {
+            "mega-head": "MEN",
+            "mega-sub-head": "SHOES",
+            "norml-link": "#",
+            "menu": "",
+            "mega-sub-head-sec": "BEST SELLERS",
+            "norml-link-sec": "",
+            "menu_sec": "",
+            "mega-sub-head-thd": "APPAREL & MORE",
+            "norml-link-thd": "",
+            "menu_thd": "",
+            "mega-sub-head-frth": "FEATURED",
+            "col-3": false,
+            "collection": "mens-sale",
+            "collection2": "the-new-golf-dasher",
+            "hide-div": false,
+            "arti-pst": "",
+            "hide-blog": true
+          }
+        },
+        "ecdad4ff-d82d-4868-8f1a-4c9f973c6993": {
+          "type": "mega-menu",
+          "settings": {
+            "mega-head": "WOMEN",
+            "mega-sub-head": "SHOES",
+            "norml-link": "",
+            "menu": "",
+            "mega-sub-head-sec": "BEST SELLERS",
+            "norml-link-sec": "",
+            "menu_sec": "",
+            "mega-sub-head-thd": "APPAREL & MORE",
+            "norml-link-thd": "",
+            "menu_thd": "",
+            "mega-sub-head-frth": "FEATURED",
+            "col-3": false,
+            "collection": "womens-sale",
+            "collection2": "the-new-golf-dasher-1",
+            "hide-div": false,
+            "arti-pst": "",
+            "hide-blog": true
+          }
+        },
+        "764ab41e-5750-46e9-917d-db93108d721d": {
+          "type": "mega-menu",
+          "settings": {
+            "mega-head": "KIDS",
+            "mega-sub-head": "LITTLE KIDS",
+            "norml-link": "",
+            "menu": "",
+            "mega-sub-head-sec": "LITTLE KIDS",
+            "norml-link-sec": "",
+            "menu_sec": "",
+            "mega-sub-head-thd": "FEATURED",
+            "norml-link-thd": "",
+            "menu_thd": "",
+            "mega-sub-head-frth": "FEATURED",
+            "col-3": true,
+            "collection": "little-kids",
+            "collection2": "big-kids",
+            "hide-div": false,
+            "arti-pst": "",
+            "hide-blog": true
+          }
+        },
+        "dac8cc78-ec82-4263-a8bc-271002a6b3f3": {
+          "type": "normal-menu",
+          "settings": {
+            "norml-head": "SOCKS",
+            "norml-link": "#"
+          }
+        },
+        "e8bcf22b-1795-47c0-941e-55a8d52cb947": {
+          "type": "normal-menu",
+          "settings": {
+            "norml-head": "SALE",
+            "norml-link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "08277acc-3609-4248-bcf9-a3c1c9c335f8",
+        "9eaaebad-b9d8-4761-86de-dc07065a08ed",
+        "ecdad4ff-d82d-4868-8f1a-4c9f973c6993",
+        "764ab41e-5750-46e9-917d-db93108d721d",
+        "dac8cc78-ec82-4263-a8bc-271002a6b3f3",
+        "e8bcf22b-1795-47c0-941e-55a8d52cb947"
+      ],
+      "settings": {
+        "logo_position": "middle-center",
+        "menu": "signal-header",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "always",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

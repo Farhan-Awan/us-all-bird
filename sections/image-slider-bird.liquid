@@ -1,0 +1,258 @@
+<style>	
+.slide_container
+  {
+    width: 100%;
+   	height: 800px; 
+    margin: auto;
+    margin-top: -180px;
+  }
+  .fx-image-slide
+  { 
+   	height: 850px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+ .fx_head_txtchange h2
+  {
+    font-size: 22px;
+    color: white;
+  }
+  .text_change-withtime
+  {
+   	margin: auto; 
+        margin-left: 5px!important;
+  }
+  .slick-dots li button:before   
+  {
+  	font-size: 30px!important;
+  }
+  .slick-dots li.slick-active button:before {color: #fff!important;}
+  .slick-dots{
+/*     left: 15%; */
+    transform: rotate(90deg);
+    top: 4%;
+    right: 30%;
+    width: 10%!important;
+  }
+   .slick-dots li button:before{
+    color: #fff!important;
+  }
+  .slick-dots li{ margin: 0!important;}
+  .slider-card-container{
+        display: grid;
+    grid-template-columns: 100%;
+    min-height: 1050px;
+    align-items: self-end;
+    justify-content: center;
+  }
+  .slider-card-txt{align-self: flex-end;}
+  .banner-custom-button{align-self: flex-start;}
+    .slider-card-txt *{
+    color: #fff;
+  }
+  .btn-ban-1,.btn-ban-2 {
+    background: #fff!important;
+    color: #212A2F!important;
+  }
+    .btn-ban-1:hover,.btn-ban-2:hover {
+    background: #212A2F!important;
+    color: #fff!important;
+  }
+  .btn-ban-1:before,.btn-ban-2:before{
+    box-shadow:none!important;
+  }
+  .btn-ban-1:after,.btn-ban-2:after{
+/*     border-radius: none!important; */
+    box-shadow:none!important;
+  }
+  .bird-gray-line{
+    background: #212A2F;
+    height: 50px;
+/*     margin-top: -80px; */
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  .bird-gray-line P {
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+}
+ a.gray-link-bird {
+    color: #fff;
+}
+  @media screen and (max-width: 767px) {
+  .bird-gray-line {
+        background: #212A2F;
+        height: 90px;
+        margin-top: -30px;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+      }
+.bird-gray-line P{
+        font-size: 14px;
+}
+.slider-card-container{
+      min-height: 1250px;
+}
+    
+/*   {% for block in section.blocks %}
+#jkb-{{ block.id }} {
+  background-image: url('{{ block.settings.slide_images_mobile | img_url: 'master' }}') !important;
+}
+{% endfor %}
+}
+ {% for block in section.blocks %}
+   #jkb-{{ block.id }}{
+    background-image: url({{block.settings.slide_img | img_url: 'master' }});
+  }
+   {% endfor %}} */   
+</style>
+<div class="slide_container">
+   <div class="bird-land-slidee"> 
+   {% for block in section.blocks %}
+     <div class="slider-vert-content">
+     <div class="fx-image-slide" style="background-image: url({{block.settings.slide_img | img_url: 'master' }})">
+  <div class="slider-card-container page-width">
+         <div class="slider-card-txt">
+       <h1>Meet The Perfect Travel Shoes</h1>
+         <p>Super Packable. Versatile. And All-Day (And Night) Adventure Ready.</p>
+         </div>
+         <div class="banner-custom-button banner__buttons banner__buttons--multiple">
+           <a href="#" class="button  btn-ban-1"> SHOP MEN</a>
+             <a href="#" class="button  btn-ban-2">SHOP WOMEN </a>
+         </div>
+       </div> 
+     </div>
+       </div> 
+    {%endfor%} 
+
+   </div>
+</div> 
+<div class="bird-gray-line"> 
+       <p><b>Discover Your Perfect Pair</b> Try our Style Quiz to find the best pair for you. <a href="#" class="gray-link-bird">Take the Style Quiz</a>
+       </p>
+      </div>
+ <script> 
+  $(document).ready(function(){
+    $('.bird-land-slidee').slick({
+    vertical: true,
+     dots: true,
+       arrows: false,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+      responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+        }
+      }
+    ]
+  })
+});   
+		</script>
+
+
+{% schema %}
+  {
+    "name": "image-slider-bird",
+    "settings": [
+			{
+			"type": "text",
+			"id": "sec_heading",
+			"label": "Write section text"
+			},
+			  {
+      "type": "select",
+      "id": "color_scheme1",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "accent-1"
+        },
+        {
+          "value": "accent-2",
+          "label": "accent-2"
+        },
+        {
+          "value": "background-1",
+          "label": "background-1"
+        },
+        {
+          "value": "background-2",
+          "label": "background-2"
+        }
+      ],
+      "default": "accent-1",
+      "label": "choose background color",
+      "info": "accent-1"
+      }
+],
+	"blocks": [
+	     {
+       "name": "image",
+       "type": "image",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "slide_img",
+           "label": "Choose Image"
+         },
+         {
+           "type": "image_picker",
+           "id": "slide_images_mobile",
+           "label": "Choose Mobile Image"
+         },
+		 {
+          "type": "text",
+          "id": "text0",
+          "default": "Give customers details about the banner image(s) or content on the template.",
+          "label": "Heading descrip"
+        },
+		 {
+          "type": "text",
+          "id": "text1",
+          "default": "Give customers details about the banner image(s) or content on the template.",
+          "label": "Sub-Heading Descrip"
+        },
+  		{
+          "type": "text",
+          "id": "btn_start",
+          "label": "Start Shoping"
+        }		 
+	]
+ }
+],
+
+	 "presets": [
+    {
+      "name": "image-slider-bird",
+      "blocks": [
+        
+      ]
+    }
+  ]
+  }
+
+{% endschema %}

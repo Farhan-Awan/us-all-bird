@@ -1,0 +1,155 @@
+<style>
+  .fx_container
+  {
+    max-width: 2000px;
+   	height: 600px; 
+    padding:2%;
+    
+  }
+  .column1 {
+  
+  width: 100%;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+    border: 2px solid lightgray;
+} 
+  
+  .column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+    border: 2px solid lightgray;
+}
+
+/* Clear floats after the columns */
+.fx_container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.img_text
+  {
+   	font-size: 20px;
+      margin-top: -80px;
+  }
+
+.img_set
+  {
+   	max-width: 5%; 
+    margin: 0 auto;
+  }
+  
+  .txt_center { text-align: center;}
+  .sec_head1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+  
+  
+  
+  
+  
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+  }
+}
+</style>
+<div class="fx_container">
+  <div class="sec_head1 txt_center"><h1> {{section.settings.section_head1}} </h1> </div>
+  <div class="sec_head2 txt_center"><h2> {{section.settings.section_head2}}</h2> </div>
+    
+  <div class="column1">
+    <div class="img_set"> <img src="{{ section.settings.blk_image1 | img_url: 'master'}}" style="width:100%"></div>
+    <div class="blk_head txt_center"><h2> {{section.settings.block_heading1}} </h2> </div>
+    <div class="blk_text txt_center"> <span>{{section.settings.block_txt}} </span> </div>
+  </div>
+  {% for block in section.blocks %}
+  <div class="column2">
+    
+    <div class="img_set"> <img src="{{ block.settings.blk_image2 | img_url: 'master'}}" style="width:100%"></div>
+    <div class="blk_head txt_center"><h2> {{block.settings.block_heading2}} </h2> </div>
+    <div class="blk_text txt_center"> <span>{{block.settings.block_txt2}} </span> </div>
+    
+  </div>
+  {%endfor%}
+  </div>
+    
+  
+  
+
+
+{% schema %}
+  {
+    "name": "fx_contc_sec",
+    "settings": [
+		{
+          "type": "text",
+          "id": "section_head1",
+
+          "label": "Write Section heading1"
+		},
+        {
+        
+		"type": "text",
+        "id": "section_head2",
+        "label": "Write Section heading2"
+
+        },
+ 		{
+           "type": "image_picker",
+           "id": "blk_image1",
+           "label": "Choose Image for Background"
+         },
+		{
+			"type": "text",
+			"id": "block_heading1",
+			"label": "Write Block heading"
+		},
+		{
+			"type": "text",
+			"id": "block_txt",
+			"label": "Write Block text"
+		}
+],
+
+	"blocks": [
+     {
+       "name": "image",
+       "type": "image",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "blk_image2",
+           "label": "Choose Image for Background"
+         },
+		{
+			"type": "text",
+			"id": "block_heading2",
+			"label": "Write Block heading"
+		},
+		{
+			"type": "text",
+			"id": "block_txt2",
+			"label": "Write Block text"
+		}
+			]
+     }
+   ],
+
+
+	 "presets": [
+    {
+      "name": "fx_contc_sec",
+      "blocks": [
+
+      ]
+    }
+  ]
+
+
+  }
+
+{% endschema %}

@@ -1,0 +1,133 @@
+<style>
+  .ash-mail-container {
+    background: #F8F7F5;
+    width: 100%;
+        padding: 20px 0 50px;
+}
+  .ash-tit-txt p {
+    text-align: center;
+    padding: 0 0 40px;
+}
+.ash-tit-txt h2 {
+      text-align: center;
+      font-size: 30px;
+      color: #212a2f;
+}
+.ash-field-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  gap: 10px;
+}
+.ash-span-mailtxt{
+  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+input#ash-field {
+    height: 60px;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 45%;
+   height: 50px;
+    border-bottom: 2px solid rgb(33, 42, 47);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+    font-family: geograph;
+    font-weight: 300;
+}
+  .ash-tit-txt p {
+    width: 70%;
+    margin: 0 auto;
+    color: #000;
+}
+.ash-f-btn {
+    height: 50px;
+    width: 130px;
+    background:#212A2F;
+    color:#fff;
+  }
+.ash-f-btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+    height: 50px;
+    font-weight: 600;
+} 
+  input#ash-field:focus-visible {
+    box-shadow: none!important;
+    outline: none;
+    outline-offset: 0;
+     border:  2px solid black;
+  }
+  input#ash-field::placeholder {
+    color: lightgray;
+    padding-left: 10px;
+}
+  a.ash-terms {
+    color: #4d5559;
+    font-weight: 600;
+}
+ a.ash-policy{
+   color: #4d5559;
+    font-weight: 600;
+ } 
+@media only screen and (max-width: 768px) {
+     .ash-tit-txt p{width: 80%;}
+    .ash-field-btn-container{flex-direction: column;}
+    input#ash-field{width: 80%;}
+  .ash-f-btn{width: 288px;}
+  .ash-span-mailtxt{font-size: 10px; flex-direction: column; gap: 0;}
+  
+}
+</style>
+
+<div class="ash-mail-container">
+<div class="ash-content-layout page-width">
+        <div class="ash-tit-txt">
+        <h2 class="inline-richtext h1">Want First Dibs? </h2>
+        <p class="newsletter__subheading rte">Join our email list and be the first to know about new limited edition products, material innovations, and lots of other fun updates.</p>
+        </div>
+  <div class="ash-field-btn-container">
+   <input type="text" id="ash-field" name="contact[email]" class="ash-f-input" value="" aria-required="true" autocorrect="off" autocapitalize="off" autocomplete="email" placeholder="Enter Your Email Address" required="">
+    <div class="ash-f-btn"> <a href="#"> SIGN UP </a></div>
+  </div>
+ <span class="ash-span-mailtxt"> Note: You can opt-out at any time. See our <a href="#" class="ash-policy">Privacy Policy </a> and <a href="#" class="ash-terms">Terms. </a></span> 
+</div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "custom-signup",
+    "settings": [
+			{
+    			"type": "text",
+    			"id": "sec_heading",
+    			"label": "Write section text"
+			}
+			  
+     
+],
+
+
+	 "presets": [
+    {
+      "name": "custom-signup"
+    }
+  ]
+  }
+
+{% endschema %}

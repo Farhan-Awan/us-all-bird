@@ -1,0 +1,400 @@
+{
+  "sections": {
+    "b32c1ea5-9e1c-4bb0-9be0-44eeac2c8e73": {
+      "type": "image-slider-bird",
+      "blocks": {
+        "539b79bb-bba9-496c-bf0c-4ee43f5ba0fb": {
+          "type": "image",
+          "settings": {
+            "slide_img": "shopify:\/\/shop_images\/blue-bot.jpg",
+            "slide_images_mobile": "shopify:\/\/shop_images\/23Q2-SNE-Homepage_Hero-Performance-Mobile-1650x2500-2.jpg",
+            "text0": "Give customers details about the banner image(s) or content on the template.",
+            "text1": "Give customers details about the banner image(s) or content on the template.",
+            "btn_start": ""
+          }
+        },
+        "cea3bbdd-38a3-4fe8-88a2-1e907c51785e": {
+          "type": "image",
+          "settings": {
+            "slide_img": "shopify:\/\/shop_images\/purp-bot.jpg",
+            "slide_images_mobile": "shopify:\/\/shop_images\/Homepage_Hero.jpg",
+            "text0": "Give customers details about the banner image(s) or content on the template.",
+            "text1": "Give customers details about the banner image(s) or content on the template.",
+            "btn_start": ""
+          }
+        }
+      },
+      "block_order": [
+        "539b79bb-bba9-496c-bf0c-4ee43f5ba0fb",
+        "cea3bbdd-38a3-4fe8-88a2-1e907c51785e"
+      ],
+      "settings": {
+        "sec_heading": "",
+        "color_scheme1": "accent-1"
+      }
+    },
+    "282741c6-48d0-482b-8ec1-90bc7741776b": {
+      "type": "three-tab-collect",
+      "blocks": {
+        "b82c41d7-af3c-42ec-9643-700802942fac": {
+          "type": "collection",
+          "settings": {
+            "tab-title": "FOR EVERYDAY",
+            "bird-col1": "tree-breezer",
+            "bird-col2": "dasher",
+            "bird-col3": "allgood-cotton-tee"
+          }
+        },
+        "d8f6b615-3a6b-4cdc-9a4d-ee758e1dda8b": {
+          "type": "collection",
+          "settings": {
+            "tab-title": "FOR ACTIVITY",
+            "bird-col1": "dasher",
+            "bird-col2": "tree-flyer",
+            "bird-col3": "tree-runner"
+          }
+        },
+        "fc689a3f-c00c-4d43-99bc-3292dc20067f": {
+          "type": "collection",
+          "settings": {
+            "tab-title": "FOR TRAVEL",
+            "bird-col1": "allgood-cotton-tee",
+            "bird-col2": "dasher",
+            "bird-col3": "tree-breezer"
+          }
+        }
+      },
+      "block_order": [
+        "b82c41d7-af3c-42ec-9643-700802942fac",
+        "d8f6b615-3a6b-4cdc-9a4d-ee758e1dda8b",
+        "fc689a3f-c00c-4d43-99bc-3292dc20067f"
+      ],
+      "settings": {
+        "sec_heading": "",
+        "color_scheme1": "accent-1"
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Meet The Perfect Travel Shoes",
+            "heading_size": "h0"
+          }
+        },
+        "0d6101a2-709e-482c-891f-2e6f937a9702": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "Explore all",
+            "button_link_2": "shopify:\/\/pages\/faqs",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "0d6101a2-709e-482c-891f-2e6f937a9702",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/23Q2-Golf_Dasher-Site-Secondary_Hero-Desktop-3840x1995-min__2.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "0ef0f9e8-755e-4753-ba66-345663edeaf1": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16026660700313__0ef0f9e8-755e-4753-ba66-345663edeaf1-168436478208956c4d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Game On, Golf Dasher",
+            "heading_size": "h1"
+          }
+        },
+        "template--16026660700313__0ef0f9e8-755e-4753-ba66-345663edeaf1-168436478208956c4d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our first golf shoe is lightweight, comfy, and a great reason to ditch the cart.<\/p>"
+          }
+        },
+        "template--16026660700313__0ef0f9e8-755e-4753-ba66-345663edeaf1-168436478208956c4d-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP MEN",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "SHOP WOMEN",
+            "button_link_2": "#",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16026660700313__0ef0f9e8-755e-4753-ba66-345663edeaf1-168436478208956c4d-0",
+        "template--16026660700313__0ef0f9e8-755e-4753-ba66-345663edeaf1-168436478208956c4d-1",
+        "template--16026660700313__0ef0f9e8-755e-4753-ba66-345663edeaf1-168436478208956c4d-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "31c34c9c-245a-4aa3-86e7-29d218cc313e": {
+      "type": "product-slider",
+      "settings": {
+        "productslide_sec_heading": "Now On Sale",
+        "duc_slide1": "now-on-sale"
+      }
+    },
+    "4fd4c7e4-aa1a-48a2-9de6-caa514b95a09": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16026660700313__4fd4c7e4-aa1a-48a2-9de6-caa514b95a09-1684365563f38ecc57-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--16026660700313__4fd4c7e4-aa1a-48a2-9de6-caa514b95a09-1684365563f38ecc57-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--16026660700313__4fd4c7e4-aa1a-48a2-9de6-caa514b95a09-1684365563f38ecc57-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16026660700313__4fd4c7e4-aa1a-48a2-9de6-caa514b95a09-1684365563f38ecc57-0",
+        "template--16026660700313__4fd4c7e4-aa1a-48a2-9de6-caa514b95a09-1684365563f38ecc57-1",
+        "template--16026660700313__4fd4c7e4-aa1a-48a2-9de6-caa514b95a09-1684365563f38ecc57-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/23Q2-Breezer_Point-Site-Secondary_Hero-Mobile-3840x1995-min.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "c63a1b53-c4c4-4288-a8de-a48dec2172d2": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16026660700313__c63a1b53-c4c4-4288-a8de-a48dec2172d2-168436478208956c4d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Summer Trips Need Super Packable Shoes",
+            "heading_size": "h1"
+          }
+        },
+        "template--16026660700313__c63a1b53-c4c4-4288-a8de-a48dec2172d2-168436478208956c4d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’ve got your 10,000 steps covered, easy.<\/p>"
+          }
+        },
+        "template--16026660700313__c63a1b53-c4c4-4288-a8de-a48dec2172d2-168436478208956c4d-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP MEN",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "SHOP WOMEN",
+            "button_link_2": "#",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16026660700313__c63a1b53-c4c4-4288-a8de-a48dec2172d2-168436478208956c4d-0",
+        "template--16026660700313__c63a1b53-c4c4-4288-a8de-a48dec2172d2-168436478208956c4d-1",
+        "template--16026660700313__c63a1b53-c4c4-4288-a8de-a48dec2172d2-168436478208956c4d-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "98dc1334-2a9f-434f-b341-a3f98f69be7a": {
+      "type": "product-slider",
+      "disabled": true,
+      "settings": {
+        "productslide_sec_heading": "Shop The Collections",
+        "duc_slide1": "now-on-sale"
+      }
+    },
+    "24c16db6-7dad-4002-8b57-4833a38bcd90": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16026660700313__24c16db6-7dad-4002-8b57-4833a38bcd90-1684365563f38ecc57-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--16026660700313__24c16db6-7dad-4002-8b57-4833a38bcd90-1684365563f38ecc57-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--16026660700313__24c16db6-7dad-4002-8b57-4833a38bcd90-1684365563f38ecc57-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16026660700313__24c16db6-7dad-4002-8b57-4833a38bcd90-1684365563f38ecc57-0",
+        "template--16026660700313__24c16db6-7dad-4002-8b57-4833a38bcd90-1684365563f38ecc57-1",
+        "template--16026660700313__24c16db6-7dad-4002-8b57-4833a38bcd90-1684365563f38ecc57-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/23Q2-Earth_Day-Site-Secondary_Hero-3840x1995.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "2935e045-973f-43d3-8619-ac8f72ab6230": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16026660700313__2935e045-973f-43d3-8619-ac8f72ab6230-168436478208956c4d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "More Updates About Less Carbon",
+            "heading_size": "h1"
+          }
+        },
+        "template--16026660700313__2935e045-973f-43d3-8619-ac8f72ab6230-168436478208956c4d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Reducing the carbon footprint of our products is at the heart of everything we do. And we’ve got good news: we continue to make headway. Read about our progress from 2022 in our latest Flight Status report.<\/p>"
+          }
+        },
+        "template--16026660700313__2935e045-973f-43d3-8619-ac8f72ab6230-168436478208956c4d-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "OUR SUSTAINABILITY STRATEGY",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16026660700313__2935e045-973f-43d3-8619-ac8f72ab6230-168436478208956c4d-0",
+        "template--16026660700313__2935e045-973f-43d3-8619-ac8f72ab6230-168436478208956c4d-1",
+        "template--16026660700313__2935e045-973f-43d3-8619-ac8f72ab6230-168436478208956c4d-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "98e15813-927a-4dcd-987b-8693703ba554": {
+      "type": "product-slider",
+      "disabled": true,
+      "settings": {
+        "productslide_sec_heading": "Stories",
+        "duc_slide1": "now-on-sale"
+      }
+    },
+    "f4018568-6218-4f42-9942-eea6a8975fa8": {
+      "type": "custom-signup",
+      "settings": {
+        "sec_heading": ""
+      }
+    }
+  },
+  "order": [
+    "b32c1ea5-9e1c-4bb0-9be0-44eeac2c8e73",
+    "282741c6-48d0-482b-8ec1-90bc7741776b",
+    "image_banner",
+    "0ef0f9e8-755e-4753-ba66-345663edeaf1",
+    "31c34c9c-245a-4aa3-86e7-29d218cc313e",
+    "4fd4c7e4-aa1a-48a2-9de6-caa514b95a09",
+    "c63a1b53-c4c4-4288-a8de-a48dec2172d2",
+    "98dc1334-2a9f-434f-b341-a3f98f69be7a",
+    "24c16db6-7dad-4002-8b57-4833a38bcd90",
+    "2935e045-973f-43d3-8619-ac8f72ab6230",
+    "98e15813-927a-4dcd-987b-8693703ba554",
+    "f4018568-6218-4f42-9942-eea6a8975fa8"
+  ]
+}
